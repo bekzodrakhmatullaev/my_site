@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/icon1.png">
+    <title>2ГИС.ru</title>
+</head>
+<body>
+<header class="gis">
+    <div class="container">
+        <div class="gis_nav">
+         <img class="Logo_2GIS" id="#glav" src="https://static.tildacdn.com/tild3366-3930-4634-b436-393365353837/Logo_2GIS.svg" alt="logo">
+       <div class="gis_menu">
+          <ul class="gis_ul">
+            <li class="gis_li">
+                <a href="#glav">Главная</a>
+                </li>
+            <li class="gis`_li">
+                <a class="porekt" href="#video">О проекте</a>
+            </li>
+            <li class="gis_li">
+                <a class="Command" href="#">Команда проекта</a>
+            </li class="gis_li">
+            <li class="gis_li">
+                <a href="https://2gis.ru/"></a>
+            </li>
+            <li class="gis_li">
+                <a class="journal" id="sxemi" href="#proekti">Схемы проекта</a>
+            </li>
+          </ul>
+       </div>    
+       <!-- <form class="btn" action=""> -->
+        <button class="btn" type="submit" > 
+            <a href="#poli" class="btn">Полезные Ссылки</a>
+        </button>
+    </div>
+    <form>
+   <!-- <input type="text" placeholder="Искать здесь..."> -->
+   <input type="text" id="searchInput" placeholder="Поиск по сайту..." />
+   <div id="content">
+
+</form>
+<script>
+  const input = document.getElementById('searchInput');
+  input.addEventListener('input', function () {
+    const query = input.value.toLowerCase();
+    document.querySelectorAll('.section').forEach(section => {
+      const text = section.textContent.toLowerCase();
+      section.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
+
+<script>
+    const burgerBtn = document.getElementById('gis_menu');
+    const menu = document.getElementById('gis_menu');
+
+    burgerBtn.addEventListener('click', () => {
+      burgerBtn.classList.toggle('active');
+      menu.classList.toggle('open');
+    });
+
+    // Закрыть меню по ESC
+    document.addEventListener('keydown', e => {
+      if(e.key === 'Escape') {
+        burgerBtn.classList.remove('active');
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+
+</header>
+<div class="strelka">
+    <div class="conteainer">
+        <a href="#" class="to-top" title="Наверх">↑</a>
+    </div>
+</div>
+<script>
+  const toTopBtn = document.querySelector('.to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      toTopBtn.style.display = 'block';
+    } else {
+      toTopBtn.style.display = 'none';
+    }
+  });
+</script>
+
+<section class="section">
+    <div class="container">
+        <div class="section_img">
+        <div class="text">
+            <h1>Данные и цифровые технологии 2ГИС</h1>
+        <p>Точные пространственные данные, инструменты для геоаналитики и
+            <br>
+            IT-решения для бизнеса и госсектора</p>
+          <button class="btn" > 
+            <a href="#poli" class="btn">Полезные Ссылки</a>
+        </button>
+        </div>
+        <img class="section_2"src="https://disk.2gis.com/opk-2gis-site/hero640x640.gif" alt="">
+    </div>
+</div>
+</section>
+   <hr>
+  <div class="column">   
+    </div>
+    <br>
+ 
+ <section class="column" id="proekti">
+    <div class="container">
+        <h2>О Проекте</h2>   
+        <div class="cards" id="sxemi">
+           <div class="card">
+            <img src="img/2.webp" alt="photo">
+          <p>77+ млн</p>
+            <p>Активных пользователей</p>   
+         </div>   
+          <div class="card">
+            <img src="img/reklama.webp" alt="photo">
+            <p>5,9 + млн</p>
+            <p>Организаций в справочнике</p>
+         </div>    
+           <div class="card">
+            <img src="img/imgpodaddress.webp" alt="photo">
+            <p>Проект по создание схемы зданий на 2-Gis</p>
+            <p> Выполненные нами работы </p>
+            </div>
+              <div class="card">
+            <img src="img/IMG_3850.webp" alt="photo">
+            <p>Проект по создание схемы зданий на 2-Gis</p>
+            <p> Выполненные нами работы  </p>
+            </div>
+               <div class="card">
+            <img src="img/IMG_3852.jpg" alt="photo">
+            <p>Проект по создание схемы зданий на 2-Gis</p>
+            <p> Выполненные нами работы  </p>
+            </div>
+               <div class="card">
+            <img src="img/IMG_3853.jpg" alt="photo">
+            <p>Проект по создание схемы зданий на 2-Gis</p>
+            <p> Выполненные нами работы  </p>
+            </div>
+            <div class="card">
+            <img src="img/IMG_3854.jpg" alt="photo">
+            <p>Проект по создание схемы зданий на 2-Gis</p>
+            <p> Выполненные нами работы </p>
+            </div>
+        </div>
+        </div>
+        </div>       
+    </div> 
+</section> 
+ <section class="column" id="video">
+    <div class="container">
+        <h2>О Проекте</h2>   
+        <div class="videos">
+           <div class="video">
+       <video controls>
+        <source src="videos/video.mp4" type="video/mp4">
+        </video>
+         </div>   
+          <!-- <div class="video">
+           <video src=""></video>
+         </div>     -->
+        </div>
+         </div>       
+    </div> 
+</section> 
+
+<hr>
+ <section class="column" id="command">
+    <div class="container">
+        <h2>Команда проекта</h2>   
+        <div class="names">            
+            <div class="name">Рахматуллаев Бекзоджон</div>
+            <div class="name">Роева София</div>
+            <div class="name">Котляр Константин</div>
+            <div class="name">Корси Шон</div>
+            <div class="name">Кондрашов Михаил</div>
+            <div class="name">Шарипов Исломжон</div>
+            <div class="name">Ткачев Михаил</div>
+            <div class="name">Саломов Абдугани</div>
+            <div class="name">Нургелдиев Овез</div>
+             <div class="name"> Eщё + 29 </div>
+        </div>
+         </div>       
+    </div> 
+    <hr>
+</section> 
+
+<div class="container">
+    <br>
+    <br>
+    <div id="map"  style="width: 70%; height: 400px;"></div>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+<script>
+    DG.then(function () {
+        var map = DG.map('map', {
+            center: [55.7558, 37.6173],
+            zoom: 15
+        });
+        DG.marker([55.749451, 37.542824]).addTo(map).bindPopup('Москва');
+    });
+</script>
+</div>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer_s">
+        
+<div class="n" >
+    <h2 id="poli">Полезные Ссылки:</h2>
+    <br>
+<div class="proof_menu">
+          <ul class="proof_li">
+            <li class="proof_li">
+                <a href="https://dev.2gis.ru/business">Мой бизнес </a>
+                </li>
+                <br>
+            <li class="proof_li">
+                <a href="https://help.2gis.ru/">Ваш помощник 2-гис</a>
+            </li>
+            <br>
+            <li class="proof_li">
+                <a href="https://dev.2gis.ru/cases">Кейсы</a>
+            </li class="proof_li">
+            <br>
+            <li class="proof_li">
+                <a href="https://2gis.ru/">Карта 2-гис</a>
+            </li>
+            <br>
+            <li class="proof_li">
+                <a href="https://reklama.2gis.ru/">Реклама</a>
+            </li>
+            <br>
+            <li class="proof_li">
+                <a href="https://2gis.github.io/mapsapi/#modularity">Новое Карта 2-гис (Git-хаb)</a>
+            </li>
+            <br>
+        </ul>
+       </div> 
+</div>            
+<br>
+<br>
+<br>    
+
+<div class="info">
+    <h2>О нас</h2>
+<p>Наша компания предоставляет точные карты и справочник организаций, чтобы помочь вам легко ориентироваться в городе.</p>
+<h2>Контакты</h2>
+<p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+<p>Показать офисы на карте</p>
+<p class="number">  8 966 500-00-50</p>
+<p>Нужна поддержка или у вас есть предложения?</p>
+<p>Мы хотим подружиться с нашими клиентами, поэтому с радостью ответим на ваши вопросы.</p>
+<p>Email: dev@2gis.ru</p>   
+<p>&copy; 2025 Ваша компания. Все права защищены.</p></div>
+</div>
+
+<div class="end">
+    <div class="container">
+        <div class="end_0">
+            <div class="end_1">
+            <h2>Поддержк сайта: Mospolytecch 2025</h2>
+        </div>
+        <div class="end_2">
+            <h2>Автор сайта : Рахматуллаев Бекзоджон Учкунович </h2>
+            <!-- <p>группа: 241-337</p> -->
+        </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

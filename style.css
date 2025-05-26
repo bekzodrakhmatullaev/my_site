@@ -1,0 +1,437 @@
+/* Сброс отступов и полей */  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+        /* Основные стили */
+ body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2b2b30;
+  color: #FFFFFF;     
+  /* cursor: pointer; */
+}
+
+.container {
+  max-width: 1400px;
+  padding:0 10px;  
+  margin: 0 auto;
+   
+}
+ul,a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.a :hover{
+  color: #149f1d;
+}
+
+
+.section_img{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  
+}
+
+.section_2{
+  width:500px;
+  height: 440px;
+
+}
+
+h1,p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+h1,p:hover{
+  color: #149f1d;
+}
+
+img {
+ /* max-width: 100%;  */
+ width: 100%;
+ /* height: 65%; */
+}
+
+
+.Logo_2GIS {
+  width: 150px;
+  cursor: pointer;
+   
+}
+
+.gis_nav{
+  width: 100%; 
+  height:85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* Стили для списка навигации */
+.gis_ul { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  list-style-type: none;
+}
+
+/* Стили для ссылок */
+.gis a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--white-color);
+  font-size: 16px;
+  
+}
+
+/* Эффект при наведении */
+.gis a:hover {
+  background-color: #149f1d;
+  border-radius: 8px  ;
+  padding:15px 15px  ;
+}
+.gis:focus-visible{
+  outline: 1px solid var(--darkgreen-color);
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  margin: 5 px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #202b20;
+  border-radius: 8px;
+  background: #435843;
+  color: #9E9C9C;
+}
+
+input:hover{
+ border: 2px solid #3cca3c;
+}
+#map{
+  margin-left:10rem ;
+}
+.button1 {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.btn{
+  width: 150px;
+  height: 50px;
+  color: white ;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  border-radius: 8px ;
+  border: solid #149f1d;
+  background-color: #149f1d;
+  cursor: poiter;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.btn:hover{
+  /* background-color:  #0f6e16; */
+  border: 2px solid #0d6313;
+  
+}
+.btn:active{
+  background-color: #0d6313;
+}
+
+.btn:focus-visible{
+  outline: 1px solid var(--darkgreen-color);
+  cursor: pointer;
+}
+.column h2{
+  text-align: center;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  width: 90px;
+  height: 70px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.to-top:hover {
+  background-color: #27ae60;
+}
+
+
+.cards{
+  display: flex;
+  justify-self: space-between;
+  /* align-items: center; */
+  gap: 10px ;
+    flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 20px;
+
+}
+.card {
+  flex: 0 0 auto;
+  width: 604px;
+  height: 624px;
+  /* opacity: 0,20; */
+  margin: 20px;
+  padding:20px 20px 20px 20px ;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 100%;     /* чтобы не выходил за пределы */
+  background-color: rgba(128, 128, 128, 0.3); /* полупрозрачный серый */
+  
+}
+.card p {
+  margin: 8%  0 0  8%  ;
+  border: none; 
+  font-size: 24px;
+  max-width: 100%;
+
+}
+.card p:hover{
+  color: #149f1d;
+}
+
+.videos{
+  display: flex;
+  justify-self: center;
+  align-items:center;
+
+  /* gap: 10px ;   */
+  /* flex-wrap: nowrap; */
+  /* overflow-x: auto;. */
+}
+video{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.video {
+  flex: 0 0 auto;
+  width: 1104px;
+  height: 604px;
+  margin: 20px;
+  padding:20px 20px 20px 20px ;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 100%;     /* чтобы не выходил за пределы */
+  background-color: rgba(128, 128, 128, 0.3); /* полупрозрачный серый */
+  
+}
+
+.names {
+  display: flex;
+  justify-self: space-between;
+  align-items:center;
+  gap: 10px ;  
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.name {
+  max-width: 100%;  
+  /* width: 100%;
+  height: 100%; */
+  flex: 0 0 auto;
+  width: 180px;
+  height: 90px;
+  margin: 20px;
+  padding:20px 20px 20px 20px ;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 100%;     /* чтобы не выходил за пределы */
+  background-color: rgba(128, 128, 128, 0.3); /* полупрозрачный серый */
+  text-align: center;
+}
+
+.footer{
+  padding: 5%;
+  background-color: #0b0b0b;
+}
+.footer_s{
+  width: 100%;
+}
+.footer p {
+  color: #757B7E;
+}
+.proof_menu a{ 
+  color: #a0a0a1;  
+}
+.footer p,.proof_menu a:hover {
+  color: #149f1d;
+}
+
+hr {
+ max-width: 100% ;
+ /* width: 100%; */
+ color: #6d3a3a;
+ border-radius:12px;
+ width: 100%;
+ height: 3px;
+ /* margin-left:22rem; */
+ background-color: #44ad4b;
+ margin-bottom: 20px;
+}
+
+.end {
+  color: white;
+}
+.end_0 {
+  display: flex;
+  justify-self: space-around;
+  align-items:center;
+  margin-top: 50px;
+  column-gap: 90px;
+  background-color: #2b2b30;
+  max-width:100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px; 
+  font-size: 16px;
+  text-align: center;
+}
+
+.end_1 {
+ margin: 10px;
+}
+.end_2 p {
+ text-align: center;
+ color:white;
+ margin: 10px;
+}
+.end_0 :hover{
+  color: #3cca3c; 
+
+
+}
+        /* Адаптивность */
+     @media (max-width: 768px) {
+  /* Меню */
+  @media(min-width: 768px) {
+      .gis_menu {
+        display: none;
+      }
+      .gis_ul {
+        max-height: none !important;
+        display: flex;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+      }
+       .gis_li {
+        border: none;
+        padding: 0 15px;
+        
+        font-size: 16px;
+      }
+
+.to-top{
+  right: 220px;
+}
+  .btn{
+  width: 100px;
+  height: 100pxpx;
+  color: white ;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  border-radius: 12px ;
+  border: 1px solid #149f1d;
+  background-color:none;
+  cursor: poiter;
+  /* display: inline-flex; */
+  /* align-items: center;
+  justify-content: center; */
+
+}
+
+  a {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  /* Карточки */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: 50%;
+    max-width: 350px;
+  }
+.section_2{
+  width: 334px;
+  height: 223px;
+}
+
+  /* Видео */
+  .video-container {
+    padding: 0 10px;
+  }
+
+  .videos video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Карта */
+  .map-container {
+    padding: 10px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Заголовки */
+  h2.section-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+}
+     }
