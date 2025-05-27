@@ -50,5 +50,4 @@
 
 1. Склонируйте проект:
    ```bash
-   git clone https://github.com/ваш-логин/2gis-search.git
-   cd 2gis-search
+   git clone (https://bekzodrakhmatullaev.github.io/my_site_1/?#)
