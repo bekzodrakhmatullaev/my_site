@@ -44,23 +44,23 @@
 
 > 📝 Вывод: **CSS** можно использовать только для внешнего вида поля ввода и анимаций. Вся логика поиска (сравнение текста, отображение результатов) — реализуется через **JavaScript**.
 ## ⚙️Вариативная часть Cтруктура кода :
---
+
 ## ⚙️ Html :
 
->  <!-- <form class="btn" action=""> -->
+ ```<form class="btn" action=""> -->
         <button class="btn" type="submit" > 
             <a href="#poli" class="btn">Полезные Ссылки</a>
         </button>
     </div>
     <form>
-   <!-- <input type="text" placeholder="Искать здесь..."> -->
+   <input type="text" placeholder="Искать здесь..."> -->
    <input type="text" id="searchInput" placeholder="Поиск по сайту..." />
    <div id="content">
 
 </form>
----
+
 ## ⚙️ CSS :
-form {
+``` form {
   position: relative;
   width: 300px;
   margin: 0 auto;
@@ -100,9 +100,10 @@ input:hover{
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
----
+
+
 ## ⚙️ JavaScript :
-<script>
+``` <script>
   const input = document.getElementById('searchInput');
   input.addEventListener('input', function () {
     const query = input.value.toLowerCase();
@@ -113,7 +114,6 @@ input:hover{
   });
 </script>
 
----
 ## 💻 Склонируйте проект:
    ```bash
    git clone [Поисковая система](https://bekzodrakhmatullaev.github.io/my_site_1)
